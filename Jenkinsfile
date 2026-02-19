@@ -7,7 +7,7 @@ pipeline {
 
         stage('Clone') {
             steps {
-                git 'https://github.com/<your-username>/monitoring-dashboard.git'
+                git 'https://github.com/karthik-nk26/monitoring-dashboard.git'
             }
         }
 

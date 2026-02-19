@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: monitoring-dashboard
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: monitoring-dashboard
+  template:
+    metadata:
+      labels:
+        app: monitoring-dashboard
+    spec:
+      containers:
+      - name: monitoring-dashboard
+        image: karthiknk826/monitoring-dashboard:v1
+        ports:
+        - containerPort: 3000
+

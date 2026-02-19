@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        IMAGE = "karthiknk26/monitoring-dashboard:v1"
+        IMAGE = "karthiknk826/monitoring-dashboard:v1"
     }
     stages {
 

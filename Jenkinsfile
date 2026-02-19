@@ -1,14 +1,13 @@
 pipeline {
     agent any
     environment {
-        IMAGE = "<dockerhub-username>/monitoring-dashboard:v1"
+        IMAGE = "karthiknk26/monitoring-dashboard:v1"
     }
     stages {
 
         stage('Clone') {
             steps {
-                git branch: 'main',
-                    url: 'https://github.com/karthik-nk26/monitoring-dashboard.git'
+                git branch: 'main', url: 'https://github.com/karthik-nk26/monitoring-dashboard.git'
             }
         }
 
